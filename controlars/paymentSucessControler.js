@@ -15,7 +15,7 @@ const paymentSuccess = async (req, res) => {
     );
     if (result.modifiedCount > 0) {
       res.redirect(
-        `http://localhost:3000/payment/success/${req.params.tranId}`
+        `https://phone-ecommerce-client-project.vercel.app/payment/success/${req.params.tranId}`
       );
     }
   } catch (error) {
